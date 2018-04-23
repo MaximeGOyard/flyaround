@@ -24,9 +24,11 @@ class Reservation
     /**
      * @var int
      *
+
      * @ORM\Column(name="nbReservedSeats", type="smallint")
      */
     private $nbReservedSeats;
+
 
     /**
      * @var \DateTime
@@ -54,6 +56,7 @@ class Reservation
     }
 
     /**
+
      * Set nbReservedSeats
      *
      * @param integer $nbReservedSeats
@@ -64,10 +67,12 @@ class Reservation
     {
         $this->nbReservedSeats = $nbReservedSeats;
 
+
         return $this;
     }
 
     /**
+
      * Get nbReservedSeats
      *
      * @return int
@@ -75,6 +80,7 @@ class Reservation
     public function getNbReservedSeats()
     {
         return $this->nbReservedSeats;
+
     }
 
     /**

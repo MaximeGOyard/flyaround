@@ -7,6 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
 
+
 /**
  * Flight controller.
  *
@@ -32,6 +33,7 @@ class FlightController extends Controller
     }
 
     /**
+
      * Creates a new flight entity.
      *
      * @Route("/new", name="flight_new")
@@ -58,6 +60,7 @@ class FlightController extends Controller
     }
 
     /**
+
      * Finds and displays a flight entity.
      *
      * @Route("/{id}", name="flight_show")
@@ -133,4 +136,5 @@ class FlightController extends Controller
             ->getForm()
         ;
     }
+
 }

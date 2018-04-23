@@ -28,6 +28,7 @@ class Flight
      */
     private $nbFreeSeats;
 
+
     /**
      * @var float
      *
@@ -45,9 +46,11 @@ class Flight
     /**
      * @var \DateTime
      *
+
      * @ORM\Column(name="publicationTime", type="datetime")
      */
     private $publicationTime;
+
 
     /**
      * @var string
@@ -75,6 +78,7 @@ class Flight
     }
 
     /**
+
      * Set nbFreeSeats
      *
      * @param integer $nbFreeSeats
@@ -147,6 +151,7 @@ class Flight
     }
 
     /**
+
      * Set publicationTime
      *
      * @param \DateTime $publicationTime
@@ -157,10 +162,12 @@ class Flight
     {
         $this->publicationTime = $publicationTime;
 
+
         return $this;
     }
 
     /**
+
      * Get publicationTime
      *
      * @return \DateTime
@@ -168,6 +175,7 @@ class Flight
     public function getPublicationTime()
     {
         return $this->publicationTime;
+
     }
 
     /**

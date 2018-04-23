@@ -7,7 +7,9 @@
         <thead>
             <tr>
                 <th>Id</th>
+
                 <th>Nbreservedseats</th>
+
                 <th>Publicationdate</th>
                 <th>Wasdone</th>
                 <th>Actions</th>
@@ -18,6 +20,7 @@
             <tr>
                 <td><a href="{{ path('reservation_show', { 'id': reservation.id }) }}">{{ reservation.id }}</a></td>
                 <td>{{ reservation.nbReservedSeats }}</td>
+
                 <td>{% if reservation.publicationDate %}{{ reservation.publicationDate|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>{% if reservation.wasDone %}Yes{% else %}No{% endif %}</td>
                 <td>
@@ -28,6 +31,7 @@
                         <li>
                             <a href="{{ path('reservation_edit', { 'id': reservation.id }) }}">edit</a>
                         </li>
+
                     </ul>
                 </td>
             </tr>
@@ -35,9 +39,11 @@
         </tbody>
     </table>
 
+
     <ul>
         <li>
             <a href="{{ path('reservation_new') }}">Create a new reservation</a>
         </li>
     </ul>
+
 {% endblock %}
