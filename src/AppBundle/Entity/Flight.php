@@ -24,9 +24,10 @@ class Flight
     /**
      * @var int
      *
-     * @ORM\Column(name="ndFreeSeats", type="smallint")
+     * @ORM\Column(name="nbFreeSeats", type="smallint")
      */
-    private $ndFreeSeats;
+    private $nbFreeSeats;
+
 
     /**
      * @var float
@@ -45,9 +46,11 @@ class Flight
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="publicationDate", type="datetime")
+
+     * @ORM\Column(name="publicationTime", type="datetime")
      */
-    private $publicationDate;
+    private $publicationTime;
+
 
     /**
      * @var string
@@ -75,27 +78,28 @@ class Flight
     }
 
     /**
-     * Set ndFreeSeats
+
+     * Set nbFreeSeats
      *
-     * @param integer $ndFreeSeats
+     * @param integer $nbFreeSeats
      *
      * @return Flight
      */
-    public function setNdFreeSeats($ndFreeSeats)
+    public function setNbFreeSeats($nbFreeSeats)
     {
-        $this->ndFreeSeats = $ndFreeSeats;
+        $this->nbFreeSeats = $nbFreeSeats;
 
         return $this;
     }
 
     /**
-     * Get ndFreeSeats
+     * Get nbFreeSeats
      *
      * @return int
      */
-    public function getNdFreeSeats()
+    public function getNbFreeSeats()
     {
-        return $this->ndFreeSeats;
+        return $this->nbFreeSeats;
     }
 
     /**
@@ -147,27 +151,31 @@ class Flight
     }
 
     /**
-     * Set publicationDate
+
+     * Set publicationTime
      *
-     * @param \DateTime $publicationDate
+     * @param \DateTime $publicationTime
      *
      * @return Flight
      */
-    public function setPublicationDate($publicationDate)
+    public function setPublicationTime($publicationTime)
     {
-        $this->publicationDate = $publicationDate;
+        $this->publicationTime = $publicationTime;
+
 
         return $this;
     }
 
     /**
-     * Get publicationDate
+
+     * Get publicationTime
      *
      * @return \DateTime
      */
-    public function getPublicationDate()
+    public function getPublicationTime()
     {
-        return $this->publicationDate;
+        return $this->publicationTime;
+
     }
 
     /**

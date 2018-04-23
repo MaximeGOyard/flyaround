@@ -31,7 +31,7 @@ class PlaneModel
     /**
      * @var string
      *
-     * @ORM\Column(name="manufacturer", type="string", length=64, nullable=true)
+     * @ORM\Column(name="manufacturer", type="string", length=64)
      */
     private $manufacturer;
 
