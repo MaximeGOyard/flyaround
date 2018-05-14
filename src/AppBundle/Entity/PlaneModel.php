@@ -15,6 +15,11 @@ class PlaneModel
     /*
     * Adding personal methods / variables
     */
+    public function __toString()
+    {
+        return $this->manufacturer . "-" . $this->model;
+    }
+
     /**
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\Flight", mappedBy="plane")
      */
@@ -197,6 +202,7 @@ class PlaneModel
     {
         return $this->isAvailable;
     }
+
     /**
      * Constructor
      */
